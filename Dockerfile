@@ -12,7 +12,7 @@ RUN yum -y install httpd
 
 EXPOSE 80
 
-VOLUME /mnt/pipeline /var/www/html
+VOLUME /mnt/pipeline 
 
 RUN echo "httpd" >> /root/.bashrc
 
