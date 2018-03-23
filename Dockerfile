@@ -12,6 +12,8 @@ RUN yum -y install httpd
 
 EXPOSE 80
 
+VOLUME /mnt/web:/var/www/html
+
 RUN echo "httpd" >> /root/.bashrc
 
 CMD ["/bin/bash"]
